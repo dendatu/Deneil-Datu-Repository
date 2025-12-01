@@ -1,0 +1,148 @@
+header{
+    height: 100vh;
+    min-height: fit-content;
+    background-color: black;
+    padding: 1.5em 2em 0 2em;
+}
+nav{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+    width: 100%;
+}
+nav li{
+    color: white;
+    font-size: 1em;
+}
+nav a{
+    color: white;
+    padding: 1em 0.5em 1.5em 0.5em;
+    text-decoration: none;
+}
+nav a:hover{
+    color: red;
+    border-bottom: solid 1px red;
+}
+nav li:first-child{
+    margin-right: auto;
+    justify-self: flex-start;
+    color: red;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+.menu-button{
+    display: none;
+}
+.sideBar{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    color: white;
+    height: 100vh;
+    width: 90vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+.mainHeader{
+    display: flex;
+}
+.image{
+    display: flex;
+    height: 90vh;
+}
+#DenPic{
+    margin-left: -41em;
+    z-index: 2;
+}
+.image img{
+    object-fit: cover;
+}
+.textBox{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+.textBox h1, h2, p{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.textBox h1{
+    font-size: 3em;
+    margin: 0;
+}
+.socMedIcons{
+    display: flex;
+    gap: 1em;
+}
+.socMedIcons img{
+    border-radius: 50%;
+    background-color: white;
+    aspect-ratio: 1/1;
+    width: 2em;
+    object-fit: cover;
+    position: center;
+}
+.btn{
+    width: 10vw;
+    height: 5vh;
+    border: red solid 2px;
+    border-radius: 50px 50px 50px 50px;
+    text-align: center;
+    color: red;
+    margin: 2em 0 0 0;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.btn:hover{
+    background-color: red;
+    color: white;
+}
+.red{
+    color: red;
+}
+@media (max-width: 820px){
+    .mainHeader{
+        flex-direction: column;
+    }
+    .image{
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    #DenPic{
+        margin-left: -30em;
+        justify-self: center;
+        align-self: center;
+        height: 90%;
+    }
+    #moonPic{
+        justify-self: center;
+        align-self: center;
+        height: 90%;
+        margin-left: 0;
+    }
+    .menu-button{
+        display: block;
+    }
+    .hideSidebar{
+        display: none;
+    }
+    .btn{
+        margin-bottom: 2em;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="navBarAndLogo">
+            <nav>
+                <ul class="sideBar">
+                    <li onclick="hideSidebar()"><a href="#">X</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Experience</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <ul>
+                    <li>Deneil</li>
+                    <li><a class="hideSidebar" href="#">Home</a></li>
+                    <li><a class="hideSidebar" href="#">Services</a></li>
+                    <li><a class="hideSidebar" href="#">Skills</a></li>
+                    <li><a class="hideSidebar" href="#">Education</a></li>
+                    <li><a class="hideSidebar" href="#">Experience</a></li>
+                    <li><a class="hideSidebar" href="#">Contact</a></li>
+                    <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
+            </nav>
+            <script>
+                function showSidebar() {
+                    const sidebar= document.querySelector('.sideBar');
+                    sidebar.style.display = 'flex';
+                }
+                function hideSidebar() {
+                    const sidebar= document.querySelector('.sideBar');
+                    sidebar.style.display = 'none';
+                }
+            </script>
+        </div>
+        <div class="mainHeader">
+            <div class="image">
+                <img id="moonPic" src="moon.png" alt="Moon">
+                <img id="DenPic" src="DenDatuPic-removebg-preview.png" alt="Deneil Datu">
+            </div>
+            <div class="textBox">
+                <h1>Hi, it's <span class="red">Deneil</span></h1>
+                <h2>I'm a <span class="red">Web Developer</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolores doloremque excepturi, soluta deserunt sit in earum! Nisi, tempore! Voluptas dolorem molestiae corrupti quidem laudantium nostrum fuga qui vero explicabo?</p>
+                <div class="socMedIcons">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
+                <a href="#" class="btn"><p></p></a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

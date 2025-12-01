@@ -1,0 +1,1 @@
+Hi! Welcome to my repository! I am Deneil Datu, a second-year Bachelor of Science in Information Technology student enrolled in Republic Central Colleges. This repository contains a README file and my basic personal website made with HTML and CSS.
